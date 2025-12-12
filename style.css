@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+ 
+/* Navbar */
+nav {
+    width: 100%;
+    padding: 20px 40px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+ 
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00eaff;
+}
+ 
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+ 
+nav ul li {
+    list-style: none;
+}
+ 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+ 
+nav ul li a:hover {
+    color: #00eaff;
+}
+ 
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(45deg, #001f3f, #00101a);
+    text-align: center;
+    padding-top: 180px;
+}
+ 
+.hero h1 {
+    font-size: 45px;
+}
+ 
+.hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ccc;
+}
+ 
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #00eaff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.btn:hover {
+    background: #00bcd4;
+}
+ 
+/* Section */
+.section {
+    padding: 80px 60px;
+    background: #111;
+}
+ 
+.section.dark {
+    background: #0a0a0a;
+}
+ 
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #00eaff;
+}
+ 
+/* Cards */
+.workflow-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+ 
+.card {
+    background: #1a1a1a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #00eaff;
+    font-size: 20px;
+    flex: 1;
+    text-align: center;
+    animation: fadeUp 1s ease-in-out;
+}
+ 
+/* Animations */
+.fade {
+    animation: fadeIn 2s ease-in-out;
+}
+ 
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+ 
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+ 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    font-size: 14px;
+    color: #bbb;
+}
